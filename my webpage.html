@@ -1,113 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>My Personal Webpage</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A personal webpage by Kwaku Gyan Asamoah.">
+  <meta name="theme-color" content="#101827">
+  <title>Kwaku Gyan Asamoah | Personal Webpage</title>
+  <style>
+    :root { color-scheme: dark; --bg:#0b1220; --panel:#121d30; --text:#edf3ff; --muted:#aab8cc; --accent:#64d6c4; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family:Arial, Helvetica, sans-serif; line-height:1.6; color:var(--text); background:var(--bg); }
+    header { padding:4rem 1.25rem 3rem; text-align:center; background:linear-gradient(135deg,#14243b,#183b48); }
+    header h1 { margin:.25rem 0; font-size:clamp(2rem,6vw,3.5rem); }
+    header p, .muted { color:var(--muted); }
+    main { width:min(100% - 2rem, 900px); margin:2rem auto; }
+    section { margin:1.25rem 0; padding:1.5rem; background:var(--panel); border:1px solid #26364d; border-radius:16px; }
+    h2 { margin-top:0; color:var(--accent); }
+    a { color:var(--accent); }
+    a:focus-visible { outline:3px solid #fff; outline-offset:4px; border-radius:4px; }
+    .links { display:flex; flex-wrap:wrap; gap:.75rem; padding:0; list-style:none; }
+    .links a { display:inline-block; padding:.65rem .9rem; border:1px solid #3b6070; border-radius:999px; text-decoration:none; }
+    .notice { padding:1rem; border-left:3px solid var(--accent); background:#0d1726; border-radius:8px; color:var(--muted); }
+    footer { text-align:center; padding:2rem 1rem; color:var(--muted); }
+    @media (max-width:520px) { section { padding:1.1rem; } header { padding:3rem 1rem 2rem; } }
+  </style>
 </head>
+<body>
+  <header>
+    <p>PERSONAL WEBSITE</p>
+    <h1>Welcome to my webpage</h1>
+    <p>Hello! My name is Kwaku Gyan Asamoah. Thanks for visiting.</p>
+  </header>
 
-<body style="font-family: Arial;">
+  <main>
+    <section aria-labelledby="about-heading">
+      <h2 id="about-heading">About this page</h2>
+      <p>This is my personal space on the web. It brings together my social links and the photos, music and videos I choose to share.</p>
+    </section>
 
-    <h1>Welcome to My Personal Webpage</h1>
-    <p>Hello! My name is Asamoah Gyan Kwaku. You're welcome to my webpage!</p>
+    <section aria-labelledby="social-heading">
+      <h2 id="social-heading">Find me online</h2>
+      <ul class="links">
+        <li><a href="https://www.instagram.com/1real_kingk/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+        <li><a href="https://www.tiktok.com/@king_k_023" target="_blank" rel="noopener noreferrer">TikTok</a></li>
+        <li><a href="https://www.youtube.com/results?search_query=Kwaku+Gyan+Asamoah" target="_blank" rel="noopener noreferrer">YouTube search</a></li>
+        <li><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+      </ul>
+      <p class="muted">Facebook profile link should be replaced with the exact public profile URL when available.</p>
+    </section>
 
-    <hr>
+    <section aria-labelledby="photos-heading">
+      <h2 id="photos-heading">Photos</h2>
+      <p class="notice">No photo files are currently stored in this repository. Add your chosen, correctly licensed photos to an <code>images/</code> folder, then add them here using paths such as <code>images/photo-1.jpg</code>. This avoids broken-image icons and does not substitute unrelated stock photos.</p>
+    </section>
 
-    <!-- SOCIAL MEDIA / FAVORITE WEBSITE LINKS -->
-    <h2>My Social Media Links</h2>
-    <ul>
-        <li><a href="https://facebook.com/@Kwaku Gyan Asamoah" target="_blank">My Facebook</a></li>
-        <li><a href="https://instagram.com/@1real_kingk" target="_blank">My Instagram</a></li>
-        <li><a href="https://tiktok.com/@king_k_023" target="_blank">My TikTok</a></li>
-        <li><a href="https://youtube.com/Kwaku Gyan Asamoah" target="_blank">My YouTube</a></li>
-    </ul>
+    <section aria-labelledby="music-heading">
+      <h2 id="music-heading">Favorite music</h2>
+      <p class="notice">Audio files were not included in the repository, so there are no non-working audio players here. When you add music you have permission to share, place it in <code>audio/</code> and add an HTML audio player pointing to the exact filename.</p>
+    </section>
 
-    <hr>
+    <section aria-labelledby="videos-heading">
+      <h2 id="videos-heading">Favorite videos</h2>
+      <p class="notice">Video files were not included in the repository. Add videos you own or have permission to share to <code>videos/</code>, then link each file with a valid <code>video</code> source.</p>
+    </section>
+  </main>
 
-    <!-- PICTURES -->
-    <h2>My Pictures</h2>
-    <p>Here are some pictures of me:</p>
-
-    <img src="neon-geometric-background.jpg" width="250" alt="My picture 1">
-    <img src="AdobeStock_1313680362_Preview.jpeg" width="250" alt="My picture 2">
-    <img src="Afro-Chic Couple in Bright Room.png" width="250" alt="My picture 3">
-
-    <hr>
-
-    <!-- SONGS -->
-    <h2>My Favorite Songs</h2>
-
-    <p>Song 1</p>
-    <audio controls>
-        <source src="Siisi-Baidoo-AfroPraise-Medley-by-Siisi-Baidoo-(CeeNaija.com).mp3" type="audio/mp3">
-    </audio>
-
-    <p>Song 2</p>
-    <audio controls>
-        <source src="Joe_Mettle_-_Medo_Wo_CeeNaija.com_.mp3" type="audio/mp3">
-    </audio>
-
-    <p>Song 3</p>
-    <audio controls>
-        <source src="" type="audio/mp3">
-    </audio>
-
-    <p>Song 4</p>
-    <audio controls>
-        <source src="audio/song4.mp3" type="audio/mp3">
-    </audio>
-
-    <p>Song 5</p>
-    <audio controls>
-        <source src="audio/song5.mp3" type="audio/mp3">
-    </audio>
-
-    <hr>
-
-    <!-- VIDEOS -->
-    <h2>My Favorite Videos</h2>
-
-    <p>Video 1</p>
-    <video width="350" controls>
-        <source src="" type="video/mp4">
-    </video>
-
-    <p>Video 2</p>
-    <video width="350" controls>
-        <source src="videos/video2.mp4" type="video/mp4">
-    </video>
-
-    <p>Video 3</p>
-    <video width="350" controls>
-        <source src="videos/video3.mp4" type="video/mp4">
-    </video>
-
-    <p>Video 4</p>
-    <video width="350" controls>
-        <source src="videos/video4.mp4" type="video/mp4">
-    </video>
-
-    <p>Video 5</p>
-    <video width="350" controls>
-        <source src="videos/video5.mp4" type="video/mp4">
-    </video>
-
-<h2>My Photo Table</h2>
-
-<table border ="2" cellpadding="10" cellspacing="0">
-    <tr>
-        <td><img src="neon-geometric-background.jpg" width="200" height="150" alt="Photo 1"></td>
-        <td><img src="AdobeStock_1313680362_Preview" width="200" height="150" alt="Photo 2"></td>
-        <td><img src="images/photo3.jpg" width="200" height="150" alt="Photo 3"></td>
-        <td><img src="images/photo4.jpg" width="200" height="150" alt="Photo 4"></td>
-        <td><img src="images/photo5.jpg" width="200" height="150" alt="Photo 5"></td>
-    </tr>
-</table>
-    <hr>
-
+  <footer><p>Made with HTML and CSS · Kwaku Gyan Asamoah</p></footer>
 </body>
 </html>
-
-
-
-
-
